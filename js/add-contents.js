@@ -12,9 +12,7 @@ var createGreet = function(){
   } else if (hourNow == "No" ) {
     greeting = 'Good No Problem';
   }
-
   return '<h3>' + greeting + ' ' + name + '</h3>';
-
 }
 createGreet();
 /*
@@ -32,7 +30,6 @@ function writeGreet(){
   document.write('<h3>' + greeting + ' ' + name + '</h3>');
 }
 writeGreet();
-
 function writeGreets(){
   var hourNow;
   hourNow = prompt('How many courses would you like to see in the future?');
@@ -44,48 +41,26 @@ function writeGreets(){
   } else if (hourNow == "no") {
     greeting = 'Good bye!';
   }
-
   document.write('<h3>' + greeting + ' ' + name + '</h3>');
-
 }
 writeGreets();
 */
 var course = prompt("speaking or reading course?");
-
 while(course != "speaking" && course != "reading"){
   course = prompt("wrong answer! Speaking or Reading?");
-}
-
-var imageSource;
-
-if(course == "speaking"){
+}var imageSource;
+if (course == "speaking") {
   imageSource = 'https://blog.ed.gov/files/2017/01/Teachers-Do-You-Have-Student-Loans.jpg';
+}else{
+  imageSource = 'https://timesofindia.indiatimes.com/thumb/msid-70980246,imgsize-158567,width-800,height-600,resizemode-4/70980246.jpg';
 }
-else{
-  imageSource = 'https://image.shutterstock.com/image-photo/smiling-girl-student-woman-teacher-260nw-721118458.jpg';
-  ​}
-
-/*
-
 var numOfTeachers = prompt("How many times you want to see teachers?");
-​
-
 while(numOfTeachers == '' || isNaN(numOfTeachers)){
   numOfTeachers = prompt("Wrong answer! How many times you want to see teachers?");
 }
-​
 // Build the <img> element to add it to the page
 var imgElement = '<img src="'+imageSource+'"/>';
-​
 // make a loop to repeat the picture
 for(var i=0; i<numOfTeachers; i+=1){
   document.write(imgElement);
 }
-
-
-*/
-
-
-
-
-
